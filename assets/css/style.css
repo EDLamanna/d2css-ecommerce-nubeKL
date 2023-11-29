@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@300;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: grid;
+  grid-template-areas:
+    "nav nav nav"
+    "aside main main"
+    "footer footer footer";
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+nav {
+  grid-area: nav;
+  background-color: rgba(238, 147, 226, 0.435);
+  height: 6em;
+  display: grid;
+  grid-template-columns: 1fr 10fr 1fr;
+  align-content: center;
+  justify-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu > a > i {
+  font-size: 3em;
+  color: white;
+}
+
+.logo > img {
+  height: 5em;
+}
+
+.buy {
+  display: flex;
+  align-items: center;
+}
+
+.buy > a > i {
+  font-size: 3em;
+  color: white;
+}
+
+aside {
+  display: grid;
+  grid-area: aside;
+  background-color: rgba(100, 201, 226, 0.6);
+}
+
+.category {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5em;
+  color: grey;
+  gap: 1em;
+}
+
+.list-category {
+  height: 100vh;
+}
+
+.category-name {
+  height: 2em;
+  width: 13em;
+}
+
+.category-name:hover {
+  background-color: pink;
+  color: white;
+  font-weight: bold;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 1em;
+}
+
+.card {
+  height: 27em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card > img {
+  height: 18em;
+  width: 18em;
+}
+
+.card-body {
+  width: 100%;
+  height: 5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 0.5em;
+}
+
+.card > h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.card > p {
+  font-size: 16px;
+  text-align: center;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+}
+
+.btn-mod {
+  width: 10em;
+  height: 2em;
+  border-radius: 15px;
+  background-color: rgb(67, 148, 178);
+  color: white;
+}
+
+.btn-mod:hover {
+  background-color: rgb(246, 201, 208);
+}
+
+footer {
+  grid-area: footer;
+  height: 12em;
+  background-color: rgba(238, 147, 226, 0.435);
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.logo-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-footer > img {
+  height: 5em;
+}
+
+.contact-number {
+  display: flex;
+  height: 6.6em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-number > h3 {
+  font-size: 35px;
+  font-weight: bold;
+  color: white;
+}
+
+.contact-number > p {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.rrss {
+  height: 5em;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 1em;
+}
+
+.rrss > a > img {
+  height: 4em;
+}
+
+.footer-end-contariner {
+  display: end;
+}
+
+.pagos {
+  height: 10em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.pagos > img {
+  height: 5em;
+}
+
+.right-reserve p {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+}
